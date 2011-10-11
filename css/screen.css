@@ -1,0 +1,272 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../Ruby191/lib/ruby/gems/1.9.1/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../src/screen.scss */
+a.positive {
+  font-size: 1em;
+  text-align: center;
+  color: white !important;
+  text-shadow: #4f6203 0 1px 2px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b2dd08), color-stop(100%, #8aab06));
+  background: -webkit-linear-gradient(top, #b2dd08, #8aab06);
+  background: -moz-linear-gradient(top, #b2dd08, #8aab06);
+  background: -o-linear-gradient(top, #b2dd08, #8aab06);
+  background: -ms-linear-gradient(top, #b2dd08, #8aab06);
+  background: linear-gradient(top, #b2dd08, #8aab06);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: #627a04 0 0 2px 0 inset, #6e8905 0 -5px 0px 0 inset, #ddfa6a 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  -webkit-box-shadow: #627a04 0 0 2px 0 inset, #6e8905 0 -5px 0px 0 inset, #ddfa6a 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  -o-box-shadow: #627a04 0 0 2px 0 inset, #6e8905 0 -5px 0px 0 inset, #ddfa6a 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  box-shadow: #627a04 0 0 2px 0 inset, #6e8905 0 -5px 0px 0 inset, #ddfa6a 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+}
+/* line 32, ../src/_oh-button.scss */
+a.positive:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c6f509), color-stop(100%, #9ec407));
+  background: -webkit-linear-gradient(top, #c6f509, #9ec407);
+  background: -moz-linear-gradient(top, #c6f509, #9ec407);
+  background: -o-linear-gradient(top, #c6f509, #9ec407);
+  background: -ms-linear-gradient(top, #c6f509, #9ec407);
+  background: linear-gradient(top, #c6f509, #9ec407);
+  -moz-box-shadow: #769305 0 0 2px 0 inset, #8aab06 0 -5px 0px 0 inset, #e3fb83 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  -webkit-box-shadow: #769305 0 0 2px 0 inset, #8aab06 0 -5px 0px 0 inset, #e3fb83 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  -o-box-shadow: #769305 0 0 2px 0 inset, #8aab06 0 -5px 0px 0 inset, #e3fb83 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  box-shadow: #769305 0 0 2px 0 inset, #8aab06 0 -5px 0px 0 inset, #e3fb83 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+}
+/* line 42, ../src/_oh-button.scss */
+a.positive:active {
+  margin-top: 2.5px;
+  padding-bottom: 12.5px;
+  -moz-box-shadow: #769305 0 0 2px 0 inset, #8aab06 0 -2.5px 0px 0 inset, #ddfa6a 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  -webkit-box-shadow: #769305 0 0 2px 0 inset, #8aab06 0 -2.5px 0px 0 inset, #ddfa6a 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  -o-box-shadow: #769305 0 0 2px 0 inset, #8aab06 0 -2.5px 0px 0 inset, #ddfa6a 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  box-shadow: #769305 0 0 2px 0 inset, #8aab06 0 -2.5px 0px 0 inset, #ddfa6a 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+}
+
+/* line 13, ../src/screen.scss */
+a.neutral {
+  font-size: 1em;
+  text-align: center;
+  color: white !important;
+  text-shadow: #007a99 0 1px 2px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1ad1ff), color-stop(100%, #00b8e6));
+  background: -webkit-linear-gradient(top, #1ad1ff, #00b8e6);
+  background: -moz-linear-gradient(top, #1ad1ff, #00b8e6);
+  background: -o-linear-gradient(top, #1ad1ff, #00b8e6);
+  background: -ms-linear-gradient(top, #1ad1ff, #00b8e6);
+  background: linear-gradient(top, #1ad1ff, #00b8e6);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: #008fb3 0 0 2px 0 inset, #009bc2 0 -5px 0px 0 inset, #99ebff 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  -webkit-box-shadow: #008fb3 0 0 2px 0 inset, #009bc2 0 -5px 0px 0 inset, #99ebff 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  -o-box-shadow: #008fb3 0 0 2px 0 inset, #009bc2 0 -5px 0px 0 inset, #99ebff 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  box-shadow: #008fb3 0 0 2px 0 inset, #009bc2 0 -5px 0px 0 inset, #99ebff 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+}
+/* line 32, ../src/_oh-button.scss */
+a.neutral:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #33d6ff), color-stop(100%, #00ccff));
+  background: -webkit-linear-gradient(top, #33d6ff, #00ccff);
+  background: -moz-linear-gradient(top, #33d6ff, #00ccff);
+  background: -o-linear-gradient(top, #33d6ff, #00ccff);
+  background: -ms-linear-gradient(top, #33d6ff, #00ccff);
+  background: linear-gradient(top, #33d6ff, #00ccff);
+  -moz-box-shadow: #00a3cc 0 0 2px 0 inset, #00b8e6 0 -5px 0px 0 inset, #b3f0ff 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  -webkit-box-shadow: #00a3cc 0 0 2px 0 inset, #00b8e6 0 -5px 0px 0 inset, #b3f0ff 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  -o-box-shadow: #00a3cc 0 0 2px 0 inset, #00b8e6 0 -5px 0px 0 inset, #b3f0ff 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  box-shadow: #00a3cc 0 0 2px 0 inset, #00b8e6 0 -5px 0px 0 inset, #b3f0ff 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+}
+/* line 42, ../src/_oh-button.scss */
+a.neutral:active {
+  margin-top: 2.5px;
+  padding-bottom: 12.5px;
+  -moz-box-shadow: #00a3cc 0 0 2px 0 inset, #00b8e6 0 -2.5px 0px 0 inset, #99ebff 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  -webkit-box-shadow: #00a3cc 0 0 2px 0 inset, #00b8e6 0 -2.5px 0px 0 inset, #99ebff 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  -o-box-shadow: #00a3cc 0 0 2px 0 inset, #00b8e6 0 -2.5px 0px 0 inset, #99ebff 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  box-shadow: #00a3cc 0 0 2px 0 inset, #00b8e6 0 -2.5px 0px 0 inset, #99ebff 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+}
+
+/* line 17, ../src/screen.scss */
+a.negative {
+  font-size: 1em;
+  text-align: center;
+  color: white !important;
+  text-shadow: #991400 0 1px 2px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff381a), color-stop(100%, #e61f00));
+  background: -webkit-linear-gradient(top, #ff381a, #e61f00);
+  background: -moz-linear-gradient(top, #ff381a, #e61f00);
+  background: -o-linear-gradient(top, #ff381a, #e61f00);
+  background: -ms-linear-gradient(top, #ff381a, #e61f00);
+  background: linear-gradient(top, #ff381a, #e61f00);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: #b31800 0 0 2px 0 inset, #c21a00 0 -5px 0px 0 inset, #ffa799 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  -webkit-box-shadow: #b31800 0 0 2px 0 inset, #c21a00 0 -5px 0px 0 inset, #ffa799 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  -o-box-shadow: #b31800 0 0 2px 0 inset, #c21a00 0 -5px 0px 0 inset, #ffa799 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  box-shadow: #b31800 0 0 2px 0 inset, #c21a00 0 -5px 0px 0 inset, #ffa799 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+}
+/* line 32, ../src/_oh-button.scss */
+a.negative:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff4e33), color-stop(100%, #ff2200));
+  background: -webkit-linear-gradient(top, #ff4e33, #ff2200);
+  background: -moz-linear-gradient(top, #ff4e33, #ff2200);
+  background: -o-linear-gradient(top, #ff4e33, #ff2200);
+  background: -ms-linear-gradient(top, #ff4e33, #ff2200);
+  background: linear-gradient(top, #ff4e33, #ff2200);
+  -moz-box-shadow: #cc1b00 0 0 2px 0 inset, #e61f00 0 -5px 0px 0 inset, #ffbdb3 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  -webkit-box-shadow: #cc1b00 0 0 2px 0 inset, #e61f00 0 -5px 0px 0 inset, #ffbdb3 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  -o-box-shadow: #cc1b00 0 0 2px 0 inset, #e61f00 0 -5px 0px 0 inset, #ffbdb3 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  box-shadow: #cc1b00 0 0 2px 0 inset, #e61f00 0 -5px 0px 0 inset, #ffbdb3 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+}
+/* line 42, ../src/_oh-button.scss */
+a.negative:active {
+  margin-top: 2.5px;
+  padding-bottom: 12.5px;
+  -moz-box-shadow: #cc1b00 0 0 2px 0 inset, #e61f00 0 -2.5px 0px 0 inset, #ffa799 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  -webkit-box-shadow: #cc1b00 0 0 2px 0 inset, #e61f00 0 -2.5px 0px 0 inset, #ffa799 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  -o-box-shadow: #cc1b00 0 0 2px 0 inset, #e61f00 0 -2.5px 0px 0 inset, #ffa799 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  box-shadow: #cc1b00 0 0 2px 0 inset, #e61f00 0 -2.5px 0px 0 inset, #ffa799 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+}
+
+/* line 21, ../src/screen.scss */
+a.dark {
+  font-size: 1em;
+  text-align: center;
+  color: white !important;
+  text-shadow: #212616 0 1px 2px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #687645), color-stop(100%, #4c5633));
+  background: -webkit-linear-gradient(top, #687645, #4c5633);
+  background: -moz-linear-gradient(top, #687645, #4c5633);
+  background: -o-linear-gradient(top, #687645, #4c5633);
+  background: -ms-linear-gradient(top, #687645, #4c5633);
+  background: linear-gradient(top, #687645, #4c5633);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: #2f3620 0 0 2px 0 inset, #383f25 0 -5px 0px 0 inset, #a8b784 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  -webkit-box-shadow: #2f3620 0 0 2px 0 inset, #383f25 0 -5px 0px 0 inset, #a8b784 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  -o-box-shadow: #2f3620 0 0 2px 0 inset, #383f25 0 -5px 0px 0 inset, #a8b784 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+  box-shadow: #2f3620 0 0 2px 0 inset, #383f25 0 -5px 0px 0 inset, #a8b784 0 2px 0px 0 inset, rgba(0, 0, 0, 0.25) 0 4px 4px;
+}
+/* line 32, ../src/_oh-button.scss */
+a.dark:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #76864f), color-stop(100%, #5a663c));
+  background: -webkit-linear-gradient(top, #76864f, #5a663c);
+  background: -moz-linear-gradient(top, #76864f, #5a663c);
+  background: -o-linear-gradient(top, #76864f, #5a663c);
+  background: -ms-linear-gradient(top, #76864f, #5a663c);
+  background: linear-gradient(top, #76864f, #5a663c);
+  -moz-box-shadow: #3e4629 0 0 2px 0 inset, #4c5633 0 -5px 0px 0 inset, #b4c094 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  -webkit-box-shadow: #3e4629 0 0 2px 0 inset, #4c5633 0 -5px 0px 0 inset, #b4c094 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  -o-box-shadow: #3e4629 0 0 2px 0 inset, #4c5633 0 -5px 0px 0 inset, #b4c094 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+  box-shadow: #3e4629 0 0 2px 0 inset, #4c5633 0 -5px 0px 0 inset, #b4c094 0 2px 0px 0 inset, #cccccc 0 4px 4px;
+}
+/* line 42, ../src/_oh-button.scss */
+a.dark:active {
+  margin-top: 2.5px;
+  padding-bottom: 12.5px;
+  -moz-box-shadow: #3e4629 0 0 2px 0 inset, #4c5633 0 -2.5px 0px 0 inset, #a8b784 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  -webkit-box-shadow: #3e4629 0 0 2px 0 inset, #4c5633 0 -2.5px 0px 0 inset, #a8b784 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  -o-box-shadow: #3e4629 0 0 2px 0 inset, #4c5633 0 -2.5px 0px 0 inset, #a8b784 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+  box-shadow: #3e4629 0 0 2px 0 inset, #4c5633 0 -2.5px 0px 0 inset, #a8b784 0 2px 0px 0 inset, #cccccc 0 4px 4px -1px;
+}

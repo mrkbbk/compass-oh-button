@@ -1,0 +1,23 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "oh-button";
+
+a.positive {
+    @include oh-button(#9EC407, 5px);    
+}
+  
+a.neutral {
+  @include oh-button(#0cf, 5px);
+}
+
+a.negative {
+@include oh-button(#f20, 5px);
+}
+  
+a.dark {
+  @include oh-button(#5A663C, 5px);
+}
