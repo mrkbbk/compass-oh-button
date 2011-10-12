@@ -1,15 +1,18 @@
+/* OH-Button Comapss mixin
+  Author: Marek Babik <mrkbbk@gmail.com>
+  Licence: "Use it as you want, but don't sell it and don't forget to credit me :)"
+  
+*/
 @import "compass/css3";
 @import "compass/css3/box-shadow";
 @import "compass/css3/text-shadow";
 
-@mixin oh-button($color: #555, $depth: 3px, $border-radius: 5px, $font-size: 1em) {
+@mixin oh-button($color: #555, $depth: 3px, $bradius: 5px, $v-padding: 10px, $h-padding: 10px, $font-size: 1em) {
   $sharpness: 0px;
   $text-color: #fff;
   $text-shadow-color: darken($color, 20);
-  $v-padding: 10px;
-  $h-padding: 20px;
   $border-radius: 5px;
-  
+  font: 16px/1.5em normal Arial,sans-serif;
   font-size: $font-size;
   text-align:center;
   color:  $text-color !important;
@@ -17,11 +20,15 @@
   @include text-shadow($text-shadow-color, 0, 1px, 2px);
   text-decoration:none;
   font-weight:bold;
-  display: block;
+  display: inline-block;
   padding: $v-padding $h-padding;
-  padding-bottom: $v-padding + $depth;
+  padding-bottom: ($v-padding + $depth);
+  
+  position:relative;
+  top:0;
+  
   @include background( linear-gradient(top, lighten($color, 5), darken($color, 5)));
-  @include border-radius($border-radius);
+  @include border-radius($bradius);
   @include box-shadow(
         darken($color, 15) 0 0 2px 0 inset,
         darken($color, 12) 0 (-1 * $depth) $sharpness 0 inset,
@@ -40,7 +47,7 @@
   }
   
   &:active {
-    margin-top: ($depth / 2);
+    top: ($depth / 2);
     padding-bottom: ($v-padding + $depth/2);
     @include box-shadow(
           darken($color, 10) 0 0 2px 0 inset,

@@ -1,40 +1,147 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Compass Over-the-Head Buttons</title>
-    <h1>Comapss Over-the-Head Buttons</h1>
-    <link rel="stylesheet" href="css/screen.css" media="all"/>
-    <link rel="stylesheet" href="css/print.css" media="print"/>
-    <!--[if lt IE 9]> <link rel="stylesheet" href="css/ie.css" media="all"/> <!--<![endif]-->
+<meta charset="utf-8">
+<title>Compass Over-the-Head Buttons</title>
+<link rel="stylesheet" href="css/screen.css" media="all"/>
+<link rel="stylesheet" href="css/print.css" media="print"/>
+<!--[if lt IE 9]> <link rel="stylesheet" href="css/ie.css" media="all"/> <!--<![endif]-->
 </head>
-
 <body>
 <header>
-    <h1>Compass OH-Buttons</h1>
+<h1>Compass OH-Buttons</h1>
 </header>
-<article>
-    <div class="showcase">
-        <a class="positive" href="#">Link</a><br><br>
-        
-        <a href="#" class="negative">Ganondorf</a><br>
-        
-        <a href="" class="neutral">Zelda</a>
-        <br>
-        <a href="#" class="grey">grey one</a>
-    </div>
-    <aside>
+<article role="main">
+<div id="showcase">
+	<section class="examples">
         <p>
-            Those are the buttons you can get using simply:
-            <code>
-                @include oh-button($my-color);
-            </code>
+            Some basic examples - default settings, only color is defined for every button:
         </p>
-    </aside>
+        <code>
+            <div>
+			HTML
+            </div>
+    		<pre>&lt;a href="#" class="positive"&gt;Positive&lt;/a&gt;
+&lt;a href="#" class="neutral"&gt;Neutral&lt;/a&gt;
+&lt;a href="#" class="negative"&gt;Negative&lt;/a&gt;</pre>
+		</code>
+
+		<code>
+            <div>
+                SCSS
+            </div>
+            <pre>a {
+    &.positive {
+        @include oh-button(#9EC407, 5px);
+    }
+    &.neutral {
+        @include oh-button(#0cf, 5px);
+    }
+    &.negative {
+        @include oh-button(#f20, 5px);
+    }
+}</pre>
+		</code>
+
+        <div>
+            <a class="positive" href="#">Positive</a> &nbsp;
+            <a href="#" class="neutral">Neutral</a> &nbsp;
+            <a href="#" class="negative">Negative</a>
+        </div>
+        
+    </section>
+	<section class="examples">
+        <p>
+            You can also specify color, depth, padding and roundness:
+        </p>
+        <code>
+            <div>
+                HTML
+            </div>
+            <pre>&lt;a href="#" class="grey"&gt;Another one&lt;/a&gt;</pre>
+        </code>
+        <code>
+            <div>
+                SCSS
+            </div>
+            <pre>a.pink {
+    @include oh-button(#777, 5px, 20px, 20px, 10px);
+}</pre>
+        </code>
+    
+        <div>
+            <a href="#" class="pink">I <span>&hearts;</span> buttons</a>&nbsp;
+            <a href="#" class="dark">I'm boring one</a>&nbsp;
+            <a href="#" class="zilla">I'm a fox</a>&nbsp;
+        </div>
+        <br>
+        
+	</section>
+    <section class="usage">
+        <h2>How to use</h2>
+<p>
+    Drop "_oh-button.scss" file somewhere, where Compass can find it, add:
+    <code>
+        <div>SCSS
+        </div>
+        <pre>
+@import "oh-button";</pre>
+    </code>
+    to the beginnig of your .scss file, then use it like this:
+	<code>
+	<div>
+		SCSS
+	</div>
+	<pre>selector {
+    @include oh-button(
+        [$color]
+        [,$depth]
+        [,$roundness]
+        [,$v-padding]
+        [,$h-padding]
+        [,font size]
+    );
+}
+	</pre>
+	</code>
+    Where:
+    <ul>
+        <li><span>selector</span>  - a CSS selector (one which is pointing to &lt;a&gt; element, in most cases)
+    
+        <li><span>$color</span> - yup, desired color, default: #555</li>
+        <li><span>$depth</span> - "depth" of a button, default: 3px</li>
+        <li><span>$roundness</span> - corner radius, default: 5px</li>
+        <li><span>$v-padding</span> - vertical padding, default: 10px</li>
+        <li><span>$h-padding</span> - horizontal padding, default: 10px</li>
+        <li><span>$font-size</span> - size of the used font, default: 1em</li>
+    </ul>
+</p>
+
+    </section>
+</div>
+
+<aside>
+<h2>What is it</h2>
+<p>
+	<strong>OH-Button</strong> ("OH" derived from "over-the-head" type of perspective as seen on various oldschool RPG's on NES/SNES/GBA, you know, "Zelda", "Final Fantasy" etc ;)
+is a pseudo-3D button, styled using pure CSS3, inspired by buttons on Firefox Add-ons site.</p>
+	<p>To ease the pain of creating one by hand, I've made simple Compass mixin to include in your project.</p>
+
+</p>
+</aside>
 </article>
-
-
-
+<footer>
+<p>
+	made by <a href="mailto:mrkbbk@gmail.com">Marek Babik</a> - Use it in any way you want (except selling) and don't forget to credit me :)
+</p>
+</footer>
+<script>
+// kill the links
+var examples = document.getElementById("showcase");
+var as = examples.getElementsByTagName("a");
+for( var i=0; i < as.length; i++ ) {
+    as[i].onclick = function() { return false;}
+}
+</script>
 </body>
 </html>

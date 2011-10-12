@@ -4,20 +4,144 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3/transform";
+
 @import "oh-button";
 
-a.positive {
-    @include oh-button(#9EC407, 5px);    
-}
-  
-a.neutral {
-  @include oh-button(#0cf, 5px);
+
+body {
+    background: #f2f2f2;
+    color:#333;
+    font-size: 16px;
+    line-height:1.5em;
+    font-family: "Myriad Pro", Arial, Helvetica, Tahoma, sans-serif;
+    max-width:960px;
+    min-width:800px;
+    margin:10px auto;
+
 }
 
-a.negative {
-@include oh-button(#f20, 5px);
+h1, h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight:normal;
 }
-  
-a.dark {
-  @include oh-button(#5A663C, 5px);
+
+h1 {
+    font-size: 2em;
+    margin:20px 0;
+}
+
+h2 {
+    font-size:1.5em;
+    margin:0 0 10px 0;
+}
+pre {
+    font-family: Courier, "Courier New", mono;
+}
+code {
+    position:relative;
+
+     div {
+        font-size: 12/16 * 1em;
+        color: #555;
+        font-weight:bold;
+    
+        padding: 0 0 0 10px;
+        margin-bottom:-10px;
+     }    
+
+    pre {
+        z-index:200;
+        border:1px solid #ddd;
+        background: #FFFDD6;
+        padding:10px;
+        
+        margin:10px;
+    }
+ }
+article[role=main] {
+}
+
+#showcase {
+    width:60%;
+    float:left;
+    
+    div {
+        padding-left: 10px;
+    }
+}
+aside {
+    @include clearfix;
+    width:37%;
+    float:right;
+    margin-left:3%;
+    font-size: 14/16 * 1em;
+}
+
+
+footer {
+    @include clearfix;
+    width:100%;
+    font-size: 12/16 * 1em;
+    color: #777;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+section,
+aside {
+    background:#fff;
+    margin:10px 0;
+    border:1px solid #ddd;
+    @include border-radius(5px);
+    @include box-shadow(#ddd 0 2px 4px);
+}
+section,
+aside,
+footer {
+    p,h2 {
+        margin:20px 10px
+    }
+}
+
+section {
+    padding:20px 20px;
+}
+
+section.usage li span {
+    font-weight: bold;
+    font-family: Courier, "Courier New", mono;
+}
+
+a {
+    
+    &.positive {
+        @include oh-button(#9EC407, 5px);    
+    }
+      
+    &.neutral {
+      @include oh-button(#0cf, 5px);
+    }
+    
+    &.negative {
+    @include oh-button(#f20, 5px);
+    }
+      
+    &.pink {
+      @include oh-button(#EA9393, 5px, 20px, 10px, 20px);
+      span {
+        color: #A00002;
+      }
+    }
+    
+    &.dark {
+        @include oh-button(#666, 5px, 4px, 10px, 50px);
+    }
+    &.zilla {
+        @include oh-button(#489615, 5px, 6px, 8px, 16px, 1em);
+    }
+    
 }
