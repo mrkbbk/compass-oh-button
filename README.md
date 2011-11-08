@@ -38,3 +38,5 @@ Where:
 * **$v-padding** - vertical padding, default: 10px
 * **$h-padding** - horizontal padding, default: 10px
 * **$font-size** - size of the used font, default: 1em
+
+Demo at: [Github](http://mrkbbk.github.com/compass-oh-button/)
