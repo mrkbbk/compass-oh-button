@@ -1,6 +1,6 @@
 /* OH-Button Comapss mixin
   Author: Marek Babik <mrkbbk@gmail.com>
-  Licence: "Use it as you want, but don't sell it and don't forget to credit me :)"
+  Licence: "Use it as you want (except selling it), but remember to credit me"
   
 */
 @import "compass/css3";
@@ -30,10 +30,11 @@
   @include background( linear-gradient(top, lighten($color, 5), darken($color, 5)));
   @include border-radius($bradius);
   @include box-shadow(
-        darken($color, 15) 0 0 2px 0 inset,
-        darken($color, 12) 0 (-1 * $depth) $sharpness 0 inset,
-        lighten($color, 30) 0 2px $sharpness 0 inset,
-        rgba(0,0,0,.25) 0 4px 4px
+        darken($color, 15) 0 0 2px 0 inset, // inner shadow
+        darken($color, 12) 0 (-1 * $depth) $sharpness 0 inset, // bottom edge
+        lighten($color, 3) 0 ((-1 * $depth) - 1) $sharpness 0 inset, // bootom edge hilite
+        lighten($color, 40) 0 2px $sharpness 0 inset, // hilite        
+        rgba(0,0,0,.25) 0 4px 4px // drop shadow
   );
   
   &:hover {
@@ -41,17 +42,19 @@
     @include box-shadow(
           darken($color, 10) 0 0 2px 0 inset,
           darken($color, 5) 0 (-1 * $depth) $sharpness 0 inset,
-          lighten($color, 35) 0 2px $sharpness 0 inset,
+          lighten($color, 5) 0 ((-1 * $depth) - 1) $sharpness 0 inset, // bootom edge hilite
+          lighten($color, 30) 0 2px $sharpness 0 inset,
           lighten(#000, 80) 0 4px 4px
     );    
   }
   
   &:active {
-    top: ($depth / 2);
+    top: ($depth / 2) + 1;
     padding-bottom: ($v-padding + $depth/2);
     @include box-shadow(
           darken($color, 10) 0 0 2px 0 inset,
           darken($color, 5) 0 (-1 * $depth/2) $sharpness 0 inset,
+          lighten($color, 5) 0 ((-1 * $depth/2) - 1) $sharpness 0 inset, // bootom edge hilite
           lighten($color, 30) 0 2px $sharpness 0 inset,
           lighten(#000, 80) 0 4px 4px -1px
     );    
