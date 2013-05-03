@@ -4,6 +4,8 @@ by Marek Babik <contact@marekbabik.com>
 
 ## Description
 
+(Demo at: [Github](http://mrkbbk.github.com/compass-oh-button/)
+
 OH-Button ("OH" derived from "over-the-head" type of perspective as seen on various oldschool RPG's on NES/SNES/GBA, you know, "Zelda", "Final Fantasy" etc ;) is a pseudo-3D button, styled using pure CSS3, inspired by buttons on Firefox Add-ons site.
 
 To ease the pain of creating one by hand, I've made simple Compass mixin to include in your project.
@@ -39,4 +41,3 @@ Where:
 * **$h-padding** - horizontal padding, default: 10px
 * **$font-size** - size of the used font, default: 1em
 
-Demo at: [Github](http://mrkbbk.github.com/compass-oh-button/)
